@@ -1,0 +1,17 @@
+{{#each this}}
+  <h1>{{name}}</h1>
+  <div class="flex_container">
+    <ul>
+      <li class="info_item"><h3>Capital: </h3> {{capital}}</li>
+      <li class="info_item"><h3>Population: </h3> {{population}}</li>
+      <li class="info_item"><h3>Languages: </h3>
+        <ul>
+          {{#each languages}}
+            <li>{{this.name}}</li>
+          {{/each}}
+        </ul>
+      </li>
+    </ul>
+    <img src="{{flag}}" alt="{{name}} flag" width="440">
+  </div>
+{{/each}}
